@@ -1,0 +1,40 @@
+
+Copyright 2015 Naver
+Author : Dongseok Hyun <dustin.hyun@navercorp.com>
+
+This file is part of Usher.
+
+Usher is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Usher is distrubuted in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Usher. If not, see <http://www.gnu.org/licenses/>.
+
+README
+
+Steps to make Usher work on your tomcat
+=======================================
+
+1. Edit TOMCAT_LIB path in Makefile.
+
+   e.g. TOMCAT_LIB='/usr/yourId/env/apache-tomcat/lib'
+
+2. Run make.
+
+3. Copy servlet-out/Usher.war into webapps directory of your Tomcat.
+
+4. Check if following url work on the browser.
+
+http://<yourTomCatLocation>:<port>/Usher/layout?data={"nodes":["n1","n2","n3","n4","n5","n6","n7"],"edges":[["n1","n2"],["n2","n3"],["n1","n4"],["n5","n4"],["n7","n4"],["n6","n3"]]}
+
+Steps to make Usher work on your terminal
+=========================================
+
+Just run 'make test'.
